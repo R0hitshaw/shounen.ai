@@ -1,0 +1,31 @@
+<app-header [isusercomponent]="false"></app-header>
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lp.component.css">
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v6.4.0/css/all.css">
+  <title>Login Page</title>
+</head>
+<body>
+  
+    <div class="win">
+      <form >
+        <i class="fa-solid fa-user fa-7x"></i>
+        <input id="txt" type="email" name="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder="Enter your email address " required>
+        <input id="pwd" [type]="vp?'password':'text'" name="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="Password" required>
+        <span (click)="view()"><i [ngClass]="visible?'fa-solid fa-eye fa-2x':'fa-solid fa-eye-slash fa-2x'" id="eye"></i></span>
+        <p id="fpas"><a routerLink="../fp"> Forgot Password?</a></p>
+        <p id="regx">New User?<a  routerLink="../rp">Register</a></p>
+        <div class="sub">
+        <input type="submit" value="Login" (click)="login()">
+        </div>
+    </form>
+      
+    </div>
+</body>
+</html>
+
+

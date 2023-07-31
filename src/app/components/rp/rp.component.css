@@ -1,0 +1,142 @@
+
+  .win
+  {
+      width: 550px;
+      max-height: 100%;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      border: 5px solid;
+      border-radius: 15px;
+      margin: 2px;
+      z-index: 1;
+      position: absolute;
+      top: 25%;
+      left: 60px;
+      box-shadow: 10px 10px 8px 10px black;
+      transition: transform .5s;
+  }   
+  .win:hover
+  {
+      transform: translateX(10px);
+     
+  }     
+  
+  #ck
+  {
+      
+      width: 20px;
+  }
+  #fisn 
+  {
+      width: 200px;
+  }
+  #sisn 
+  {
+      width: 200px;
+  }
+  
+  input
+  {   
+      width: 420px;
+      height: 40px;
+      padding: 7px;
+      font-size: 20px;
+      margin: 10px ;
+      border:2px solid;
+      border-radius: 10px;
+  }
+  input:hover
+  {
+      background: #D3D3D3;
+  }
+  input[type="submit"]
+  {
+      width: 180px;
+      height: 50px;
+      background-color: #87CEEB;
+      padding: 5px;
+      font-size: 20px;
+      transition: transform 0.5s;
+      position: relative;
+      left: 130px;
+      bottom: 50px;
+      border-radius: 25px;
+  }
+  input[type="submit"]:hover{
+      transform:scale(1.1);
+  }
+  .win #signup{
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 2px 2px 3px white ;
+  }
+  ::placeholder
+  {
+      font-size: 25px;
+  }
+  #confirm_password
+  {
+    margin-top: -10px;
+  }
+  #ey1
+  {
+        position: relative;
+        left: 390px;
+        transform: translateY(-44px);
+        color: black;}
+
+  a:link{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #ter 
+  {
+      font-size: 20px;
+      position: relative;
+      bottom: 45px;
+      left: 40px;
+  }
+  .gender
+  {
+    position: relative;
+    display: flex;      
+   
+    
+    }
+.gender input:first-child
+{
+    width: 25px;
+    margin-left: 30px;
+    
+}
+.gender input
+{
+    width: 25px;
+    margin-left: 90px;
+    
+}
+.gender label
+{
+    position: inherit;
+    top: 17px;
+    font-size: 20px;
+   
+}
+select
+{
+    width: 420px;
+      height: 40px;
+      padding: 7px;
+      margin: 10px ;
+      border:2px solid;
+      border-radius: 10px;
+      font-size: 20px;
+}

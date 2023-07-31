@@ -1,0 +1,47 @@
+<app-header [isusercomponent]="false"></app-header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="rp.component.css">
+</head>
+<body>
+    <div class="win">
+        <h1 id="signup">Registration</h1>
+        <div class="regex">
+          <form action="/register">
+        <input type="text" name="firstname" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" id="fisn" placeholder="First Name" required>
+        <input type="text" name="lastname" [(ngModel)]="lastname" [ngModelOptions]="{standalone:true}"  id="sisn" placeholder="Last Name" required>
+        <input type="email" name="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" id="email" placeholder="Enter your email address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please Enter Valid email address." required>
+        <input type="tel"  [(ngModel)]="phonenumber" [ngModelOptions]="{standalone: true}" id="pnum" placeholder="Enter your Phone Number" pattern="[0-9]{10}" title="Please Enter Valid Phone Number." required>
+        <div class="gender"  >
+          <input type="radio" name="gender" id="mck" value="Male" [(ngModel)]="gender" [ngModelOptions]="{standalone: true}">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="fck" value="Female" [(ngModel)]="gender" [ngModelOptions]="{standalone: true}">
+          <label for="female">Female</label>
+        </div>
+        <select name="country"  [(ngModel)]="country" [ngModelOptions]="{standalone: true}" id="drp" required>
+          <option selected disabled >--Select your Country--</option>
+          <option >India</option>
+          <option >China</option>
+          <option >Japan</option>
+          <option >Malaysia</option>
+        </select>
+        <input [type]="sp?'password':'text'" name="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <span (click)="x()"><i [ngClass]="eye?'fa-solid fa-eye fa-2x':'fa-solid fa-eye-slash fa-2x'" id="ey1"></i></span>
+        <input [type]="sp?'password':'text'" name="confirmpassword" [(ngModel)]="confirmpassword" [ngModelOptions]="{standalone: true}" id="password"  id="confirm_password" placeholder="Confirm your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      
+  <input type="checkbox" name="check" id="ck" [(ngModel)]="ischecked" [ngModelOptions]="{standalone: true}" required>
+  <p id="ter">I agree to given <a  (click)="openDialog()">Terms & Condition</a></p>
+  <br>
+      <input type="submit" value="Register" (click)="save()">
+      </form>
+        </div>
+    </div>
+    
+</body>
+</html>

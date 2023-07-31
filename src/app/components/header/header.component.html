@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v6.4.0/css/all.css">
+<div class="nav" >
+    <img class="logo" src="../../assets/images/i9.jpg">
+    <h1 id="mtxt">SHOUNEN.AI</h1>
+    <ng-container class="drpdown" *ngIf="isusercomponent">
+      
+
+        <div class="uicon" >
+          <i class="fa-solid fa-circle-user fa-3x"></i>
+      
+          <!-- <button (click)="fn()"></button> -->
+          <div class="sidemenu" id="drpmenu" >
+            <a routerLink="../profile">Profile</a> 
+            <a routerLink="../rn">Random</a>
+            <a routerLink="../about">About</a>
+            <a routerLink="../lp" (click)="log()">Logout</a>
+          </div>
+        </div>
+    </ng-container>
+    <ng-container class="drpdown" *ngIf="!isusercomponent">
+      
+      <div class="icon" >
+        <i class="fa-solid fa-bars fa-3x"></i>
+    
+        <!-- <button (click)="fn()"></button> -->
+        <div class="drpcontent" id="drpmenu" >
+          <a routerLink="../home">Home</a> 
+          <a routerLink="../rp">Sign Up</a>
+          <a routerLink="../lp">Login</a>
+        </div>
+      </div> 
+      
+    </ng-container>
+</div>
+
+

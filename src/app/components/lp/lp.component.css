@@ -1,0 +1,104 @@
+
+  .fa-user
+  {
+    position: relative;
+    text-align: center;
+    padding: 5px 2px 5px 2px;
+    left: 41%;
+    background: beige;
+    border-radius: 10%;
+  }
+  .win{
+    width: 450px;
+    height: auto;
+    position: fixed;
+    border: 5px solid;
+    border-radius: 12px;
+    padding: 30px 0px;
+    margin: 2px ;
+    z-index: 1;
+    top: 200px;
+    left: 150px;
+    transition: transform .5s;
+    box-shadow: 10px 10px 8px 8px black;
+    cursor: pointer;
+  }
+  #regx{
+    position: relative;
+    left: 150px;
+    font-size: 20px;
+  
+  }
+  a:link{
+    color: red;
+    text-decoration: none;
+  }
+  a:hover{
+    color: red;
+    text-decoration: none;
+  }
+  .win:hover{
+    transform: scale(1.1);
+  }
+  #txt
+  {
+    width: 400px;
+    height: 50px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    left: 20px;
+    font-size: 20px;
+    display: block;
+  }
+  #txt:hover{
+    background: #D3D3D3;
+  }
+  #pwd:hover{
+    background: #D3D3D3;
+  }
+  #pwd
+  {
+    width: 400px;
+    height: 50px;
+    display: block;
+    position: relative;
+    left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+  }
+  #eye
+  {
+    position: absolute;
+    left: 380px;
+    top: 220px;
+    cursor: pointer;
+  }
+  ::placeholder
+  {
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 160px;
+    top: 20px;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    }
+    input[type="submit"]:hover{
+      opacity: 0.8;
+    }
+    #fpas 
+    { position: relative;
+      left: 160px;
+      font-size: 20px;
+    }

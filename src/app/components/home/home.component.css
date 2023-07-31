@@ -1,0 +1,159 @@
+
+  ::-webkit-scrollbar
+{
+	width: .8rem;
+}
+::-webkit-scrollbar-track
+{
+	background:transparent;
+	border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb
+{
+	background:#fff;
+	border-radius: 2rem;
+	height: 40vh;
+}
+.wrapper
+{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.content
+{
+	position: absolute;
+	top: 20%;
+	left: 9%;
+	width: 80%;
+	height: auto;
+	padding: 20px;
+	margin: 20px;
+	background-image: url('https://cutewallpaper.org/25/anime-wallpaper-haikyuu/384520215.jpg');
+	background-size: cover;
+	align-items: center;
+	box-shadow: 10px 10px 25px 15px black;
+}
+.content h3{
+	color: #fff;
+}
+.para
+{
+	width: 63%;
+	color: #fff;
+	font-size: 20px;
+}
+.element
+{
+	position: absolute;
+	top: 135%;
+	left: 5%;
+	display: flex;
+	justify-content: space-between;
+	width: 84%;
+	height: 400px;
+	overflow: auto;
+	box-shadow: 12px 12px 25px 17px black;
+	margin: 50px;
+	overflow:hidden;
+	cursor: pointer;
+	scroll-behavior: smooth;
+}
+.fa-circle-right
+{
+	position: absolute;
+	top: 1220px;
+	left: 1380px;
+	z-index: 1;
+	background-color: #f08521;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.fa-circle-right:hover
+{
+	background-color: #fff;
+}
+.fa-circle-left
+{
+	position: absolute;
+	top: 1220px;
+	cursor: pointer;
+	left: 80px;
+	z-index: 1;
+	background-color: #f08521;
+	border-radius: 50%;
+}
+.fa-circle-left:hover
+{
+	background-color: #fff;
+}
+.desc
+{
+	position: absolute;
+	top: 220%;
+	width: 90%;
+	left: 5%;
+	height: 100px;
+	background-color: black;
+}
+.element .element1
+{
+	width: calc(100%/2);
+	
+}
+.element .element2
+{
+	width: calc(100%/2);
+}
+.element .element3
+{
+	width: calc(100%/2);
+}
+.element .element4
+{
+	width: calc(100%/2);
+}
+.element .element5
+{
+	width: calc(100%/2);
+}
+.element1 .el1con
+{
+	position: absolute;
+	width: 25%;
+	padding: 20px;
+	font-size: 18px;
+	color: #fff;
+}
+.element2 .el2con
+{
+	position: absolute;
+	width: 25%;
+	padding: 20px;
+	font-size: 18px;
+	color: black;
+}
+.element3 .el3con
+{
+	position: absolute;
+	width: 25%;
+	padding: 20px;
+	font-size: 18px;
+	color: black;
+}
+.element4 .el4con
+{
+	position: absolute;
+	width: 25%;
+	padding: 20px;
+	font-size: 18px;
+	color: black;
+}
+.element5 .el5con
+{
+	position: absolute;
+	width: 25%;
+	padding: 20px;
+	font-size: 18px;
+	color: #fff;
+}

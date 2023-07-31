@@ -1,0 +1,26 @@
+<app-header [isusercomponent]="false"></app-header>
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fp.component.css">
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v6.4.0/css/all.css">
+  <title>Forgot Password</title>
+</head>
+<body>
+    <div class="win">
+        <h1 id="fgex">Forgot Password</h1>
+      <input id="email" type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" name="eid" placeholder="Enter your Email id" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please Enter Valid email address." required>
+      <div class="sub">
+      <input type="submit" value="Send Reset link" (click)="send()">
+      <a id="gb" routerLink="../lp">Go Back</a>
+      
+      </div>
+    </div>
+</body>
+</html>
+
+
+

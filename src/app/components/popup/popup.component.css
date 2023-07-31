@@ -1,0 +1,43 @@
+  ::-webkit-scrollbar
+{
+	width: .8rem;
+}
+::-webkit-scrollbar-track
+{
+	background:transparent;
+	border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb
+{
+	background:#fff;
+	border-radius: 2rem;
+	height: 40vh;
+}
+.pop
+{   text-align: center;
+    padding: 20px;
+    background-color:#f08521;                  
+}
+.fa-circle-xmark
+{
+    position: relative;
+    left: 270px;
+    transition: transform 0.7s;
+    border-radius: 50%;
+    bottom: 50px;
+}
+.fa-circle-xmark:hover
+{
+ transform: scale(1.1);
+ box-shadow: 2px 2px 3px 2px black;
+}
+.pop h3
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.conten
+{
+    padding: 0px 20px;
+    background-color:beige;
+}

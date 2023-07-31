@@ -1,0 +1,121 @@
+.nav
+  {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    padding: 35px ;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: #000 10px 5px 10px 0px;
+    z-index: 2;
+    right: 0;
+    top: 0;
+  }
+  .nav h1{
+    left: 30%;
+    position: fixed;
+  }
+  .drpdwn
+  {
+    float: right;
+  }
+  .drpcontent {
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 40px; 
+    top: 0;
+     background-color:#f08521;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 2;
+  }
+  .drpcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+  }
+  .drpcontent a:active
+  {
+    color: black;
+  }
+  .drpcontent a:hover 
+  {
+    background-color: #ddd;
+  }
+  .show 
+  {
+    opacity: 1;
+    visibility: visible;
+  }
+  .icon
+  {
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .icon:hover .drpcontent
+  {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+  }
+  .logo
+  {
+    width: 80px;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 50%;
+  
+  }
+  .uicon
+  {
+    position: relative;
+    left: 51%;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 8.6%;
+    margin-right: 40px;
+   /* transform: translateX(440px); */
+  }
+  .uicon .sidemenu
+  {
+    width: 0;
+    right: 0;
+    margin-left: 10px;
+    overflow: hidden;
+    height: auto;
+    display: block;
+    background-color: #f08521;
+    transition: all 1s ease;
+  }
+  .sidemenu a
+  {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+.sidemenu a:hover
+{
+  background-color: #ddd;
+}
+.uicon:hover .sidemenu
+{
+  width: 140px;
+  
+}
