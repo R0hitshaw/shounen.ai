@@ -1,2 +1,2 @@
-# shounen.ai
+# Shounen.ai
 An Angular web Apllication
